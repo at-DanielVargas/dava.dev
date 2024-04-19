@@ -1,7 +1,7 @@
 ---
 title: "Cómo Integrar Redux con Angular "
 author: Daniel Vargas
-pubDatetime: 2024-04-19
+pubDatetime: 2024-04-19T17:00
 slug: como-integrar-redux-con-angular
 featured: false
 draft: false
