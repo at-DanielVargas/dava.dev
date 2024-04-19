@@ -23,7 +23,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <Header />
   <main id="main-content">
     <section id="hero">
-      <h1>Mingalaba</h1>
+      <h1>Daniel Vargas</h1>
       <a
         target="_blank"
         href="/rss.xml"
@@ -42,12 +42,12 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       </a>
 
       <p>
-        AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro
-        blog theme. This theme follows best practices and provides accessibility
-        out of the box. Light and dark mode are supported by default. Moreover,
-        additional color schemes can also be configured.
+        Hola, soy Daniel Vargas, un desarrollador de software apasionado por la
+        tecnología y la programación. Transformando ideas en código 🚀 desde
+        hace más de 8 años. Te interesa llevar a cabo algún proyecto, que tal si
+        me cuentas más de ello.
       </p>
-      <p>
+      <!-- <p>
         Read the blog posts or check
         <LinkButton
           className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
@@ -55,12 +55,12 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         >
           README
         </LinkButton> for more info.
-      </p>
+      </p> -->
       {
         // only display if at least one social link is enabled
         socialCount > 0 && (
           <div class="social-wrapper">
-            <div class="social-links">Social Links:</div>
+            <div class="social-links">Me encuentras en:</div>
             <Socials />
           </div>
         )
@@ -73,7 +73,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       featuredPosts.length > 0 && (
         <>
           <section id="featured">
-            <h2>Featured</h2>
+            <h2>Destacado</h2>
             <ul>
               {featuredPosts.map(({ data, slug }) => (
                 <Card
@@ -92,7 +92,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     {
       recentPosts.length > 0 && (
         <section id="recent-posts">
-          <h2>Recent Posts</h2>
+          <h2>Artículos</h2>
           <ul>
             {recentPosts.map(
               ({ data, slug }, index) =>
@@ -111,7 +111,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 
     <div class="all-posts-btn-wrapper">
       <LinkButton href="/posts/">
-        All Posts
+        Más Artículos
         <svg xmlns="http://www.w3.org/2000/svg"
           ><path
             d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
