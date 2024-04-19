@@ -1,1 +1,16 @@
 media: public/assets
+content: 
+  - name: blog
+    label: Articles
+    type: collection
+    path: src/content/blog
+    fields:
+      - { name: title, label: Title, type: string }
+      - { name: author, label: Title, type: string }
+      - { name: pubDatetime, label: Title, type: date }
+      - { name: slug, label: Title, type: string }
+      - { name: featured, label: Featured, type: boolean }
+      - { name: draft, label: Draft, type: boolean }
+      - { name: tags, label: Title, type: list }
+      - { name: description, label: Description, type: string, options:{ maxlength: 160 } }
+      - { name: body, label: Body, type: rich-text }
