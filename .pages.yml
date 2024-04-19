@@ -11,6 +11,6 @@ content:
       - { name: slug, label: Title, type: string }
       - { name: featured, label: Featured, type: boolean }
       - { name: draft, label: Draft, type: boolean }
-      - { name: tags, label: Title, type: list }
+      - { name: tags, label: Title, type: string, list: true }
       - { name: description, label: Description, type: string, options:{ maxlength: 160 } }
       - { name: body, label: Body, type: rich-text }
